@@ -1,6 +1,8 @@
 .PHONY: all clean
 
-all: rapport.pdf
+all: rapport archive
+
+rapport: rapport.pdf
 
 rapport.pdf: rapport.tex mld.tex contraintes.tex modeleEA.png
 	latexmk -pdf rapport.tex 
@@ -12,8 +14,13 @@ contraintes.tex: ../schema/contraintes.md
 	pandoc ../schema/contraintes.md -t latex | sed 's/\\tightlist//g' > contraintes.tex
 
 modeleEA.png: ../schema/modeleEA.svg
-	inkscape --export-filename=modeleEA.png ../schema/modeleEA.svg -d 500
+	inkscape --export-filename=modeleEA.png ../schema/modeleEA.svg -d 600
+
+archive: ../ERKEN_Efe__Projet_Liste_de_Tâches.tar.gz
+
+../ERKEN_Efe__Projet_Liste_de_Tâches.tar.gz: rapport.pdf ../schema/modeleEA.svg ../sql/
+	tar -cvzf $@ -C .. rapport/rapport.pdf schema/modeleEA.svg sql/
 
 clean:
-	rm -f mld.tex contraintes.tex modeleEA.png rapport.pdf
+	rm -f mld.tex contraintes.tex modeleEA.png rapport.pdf ../ERKEN_Efe__Projet_Liste_de_Tâches.tar.gz
 	latexmk -c rapport.tex

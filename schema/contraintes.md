@@ -18,7 +18,7 @@ où **xx** est l'identifiant globale de la contrainte dans l'ensemble des contra
 * **(PLxx)**: Un même couple (`idTache Fille`, `idTache Mere`) ne doit pas apparaître dans l'ordre inverse (`idTache Mere`, `idTache Fille`). (Pas d'interdépendance du type (1,2) et (2,1).)
 * **(PLxx)**: `idTache Fille` et `idTache Mere` sont aussi des clés étrangères référençant `TACHE`.
 * **(PLxx)**: Effacer en cascade les n-uplets si `idTache Fille` ou `idTache Mere` n'existent plus.
-* **(PLxx)** Au moment de l'insertion les deux attributs doivent référencer tous les deux des tâches non achevées, non dépassées. (Aucun sens de dépendre des tâches déjà passées, aucun sens et aussi illégal de faire dépendre une tâche passée à d'autres tâches potentiellement en cours.)
+* **(PLxx)**: Au moment de l'insertion les deux attributs doivent référencer tous les deux des tâches non achevées, non dépassées. (Aucun sens de dépendre des tâches déjà passées, aucun sens et aussi illégal de faire dépendre une tâche passée à d'autres tâches potentiellement en cours.)
 
 ## ÊTRE ASSIGNÉ
 

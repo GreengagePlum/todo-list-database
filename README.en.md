@@ -12,6 +12,11 @@ Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
 Version 19.12.0.0.0
 ```
 
+Here is the documentation I used:
+
+* <https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/index.html#Oracle%C2%AE-Database>
+* <https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/loe.html#List-of-Examples>
+
 I also used [DBeaver](https://dbeaver.io/) as my client application.
 
 ## Git repository

@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsthm,amssymb,amsmath,xcolor}
+\usepackage{setspace}
+\doublespacing
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+}
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\author{Efe ERKEN}
+\date{\today}
+\title{Rapport Projet ``Liste de tâches''}
+
+\begin{document}
+\maketitle
+
+\section{Modèle E/A}
+\begin{center}
+	\includegraphics{modeleEA.png}
+\end{center}
+
+\section{Modèle relationnel}
+\input{mld.tex}
+
+\section{Choix d'implémentation}
+bla
+
+\input{contraintes.tex}
+
+
+\end{document}
+

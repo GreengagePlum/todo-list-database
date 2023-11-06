@@ -1,0 +1,15 @@
+%%mocodo
+% Run with the following command:
+% mocodo --input modeleEA --language fr --title Liste de tâches --colors ocean -t mld
+
+AVOIR 1, 11 LISTE, 0N UTILISATEUR
+LISTE: idListe, Nom de projet
+:
+
+UTILISATEUR: idUtilisateur, Nom, Prénom, Adresse, Date de naissance, Date d'inscription, Login, Mot de passe, Score, Programme
+ÊTRE ASSIGNÉ, 0N UTILISATEUR, 0N TACHE
+CONTENIR, 01 TACHE, 0N LISTE
+
+AVOIR 2, 11 TACHE, 0N UTILISATEUR
+TACHE: idTache, Titre, Priorité, Catégorie, Lien, Description, Date d'échéance, Status, Date de début, Date de fin, Intervalle, Date de réalisation
+DÉPENDRE, 0N TACHE, 0N TACHE

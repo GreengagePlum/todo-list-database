@@ -1,0 +1,501 @@
+DELETE FROM TACHE;
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (1);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (2);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (3);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (4);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (5);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (6);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (7);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (8);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (9);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (10);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (11);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (12);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (13);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (14);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (15);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (16);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (17);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (18);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (19);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (20);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (21);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (22);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (23);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (24);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (25);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (26);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (27);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (28);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (29);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (30);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (31);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (32);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (33);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (34);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (35);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (36);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (37);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (38);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (39);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (40);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (41);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (42);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (43);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (44);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (45);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (46);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (47);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (48);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (49);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (50);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (51);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (52);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (53);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (54);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (55);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (56);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (57);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (58);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (59);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (60);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (61);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (62);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (63);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (64);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (65);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (66);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (67);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (68);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (69);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (70);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (71);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (72);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (73);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (74);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (75);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (76);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (77);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (78);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (79);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (80);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (81);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (82);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (83);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (84);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (85);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (86);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (87);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (88);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (89);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (90);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (91);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (92);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (93);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (94);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (95);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (96);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (97);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (98);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (99);
+
+INSERT INTO
+  TACHE (idTache)
+VALUES
+  (100);

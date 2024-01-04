@@ -51,7 +51,7 @@ VALUES
     'ILeonard02',
     'UyG1_1KtD2L_O',
     15,
-    PROGRAMME (5, 0)
+    'Eagle'
   );
 
 INSERT INTO
@@ -78,7 +78,7 @@ VALUES
     'CMichael03',
     'LsE1_2BuQ1C_P',
     150,
-    PROGRAMME (10, 4)
+    'Ram'
   );
 
 INSERT INTO

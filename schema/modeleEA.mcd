@@ -1,15 +1,36 @@
 %%mocodo
 % Run with the following command:
-% mocodo --input modeleEA --language fr --title Liste de tâches --colors ocean -t mld
+% mocodo --input modeleEA --language fr --title "Liste de tâches" --colors ocean -t mld:ce
+%
+% Run with the following command to rearrange automatically after changes (RUN ONCE!):
+% mocodo --input modeleEA --language fr --title "Liste de tâches" --colors ocean -t mld:ce --seed=2 -t arrange:current
 
-AVOIR 1, 11 LISTE, 0N UTILISATEUR
 LISTE: idListe, Nom de projet
+CONTIENT, 01 TACHE, 0N LISTE
+DÉPEND DE, 0N TACHE, 0N TACHE
+TACHE EN COURS:
 :
 
-UTILISATEUR: idUtilisateur, Nom, Prénom, Adresse, Date de naissance, Date d'inscription, Login, Mot de passe, Score, Programme
-ÊTRE ASSIGNÉ, 0N UTILISATEUR, 0N TACHE
-CONTENIR, 01 TACHE, 0N LISTE
+DÉFINIT 1, 11 LISTE, 0N UTILISATEUR
+EST ASSIGNÉ, 0N UTILISATEUR, 0N TACHE
+TACHE: idTache, Titre, Priorité, Lien, Description, Date d'échéance
+/XT\ TACHE <- TACHE EN COURS, TACHE PASSÉE: Statut
+TACHE PASSÉE: Date de réalisation
 
-AVOIR 2, 11 TACHE, 0N UTILISATEUR
-TACHE: idTache, Titre, Priorité, Catégorie, Lien, Description, Date d'échéance, Status, Date de début, Date de fin, Intervalle, Date de réalisation
-DÉPENDRE, 0N TACHE, 0N TACHE
+UTILISATEUR: idUtilisateur, Nom, Prénom, Adresse, Date de naissance, Date d'inscription, Login, Mot de passe, Score
+CRÉE 2, 11 TACHE, 0N UTILISATEUR
+SE RÉPÉTE, 1N PÉRIODICITÉ, 01 TACHE
+APPARTIENT, 11 TACHE, 0N CATÉGORIE
+:
+
+UTILISE, 01 UTILISATEUR, 0N PROGRAMME
+PROGRAMME: Programme
+PÉRIODICITÉ: idPériodicité, Date de début, Date de fin, Intervalle
+CATÉGORIE: Catégorie
+:
+
+:
+COMPORTE, 1N PROGRAMME, 1N SCORE
+SCORE: idScore, Points
+S'ASSOCIE, 11 SCORE, 0N CATÉGORIE
+:

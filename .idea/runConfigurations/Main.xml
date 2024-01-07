@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/sql/ddl/suppression.sql" />
+    <script-file value="$PROJECT_DIR$/sql/ddl/creation.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/score.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/comporte.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/utilisateur.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/liste.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/periodicite.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/tache.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/tache_actuelle.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/tache_passee.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/est_assigne.sql" />
+    <script-file value="$PROJECT_DIR$/sql/dml/depend_de.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="e63320c8-5a68-4423-9d67-fe6165e9e147" />
+    <method v="2" />
+  </configuration>
+</component>

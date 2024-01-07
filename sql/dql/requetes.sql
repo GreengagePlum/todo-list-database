@@ -1,3 +1,5 @@
+-- Les index pour optimiser ces requêtes se trouvent dans
+-- le fichier de création des tables.
 ------------------------- Requête 1 ----------------------
 SELECT
   l.idListe
@@ -66,7 +68,7 @@ FROM
       AND t.Statut = 0
       AND (
         t.Date_Echeance IS NULL
-        OR t.Date_Echeance >= CURRENT_DATE
+        OR t.Date_Echeance >= SYSDATE
       )
     GROUP BY
       u.idUtilisateur
@@ -86,7 +88,7 @@ FROM
       AND t.Statut = 0
       AND (
         t.Date_Echeance IS NULL
-        OR t.Date_Echeance >= CURRENT_DATE
+        OR t.Date_Echeance >= SYSDATE
       )
       AND t.idPeriodicite IS NOT NULL
     GROUP BY
@@ -122,7 +124,7 @@ WHERE
   t.Statut = 0
   AND (
     t.Date_Echeance IS NULL
-    OR t.Date_Echeance >= CURRENT_DATE
+    OR t.Date_Echeance >= SYSDATE
   )
 GROUP BY
   t.idTache;
@@ -158,7 +160,7 @@ FROM
       AND s.Categorie = t.Categorie
     WHERE
       t.Statut = 1
-      AND (CURRENT_DATE - 7) < t.Date_Realisation
+      AND (SYSDATE - 7) < t.Date_Realisation
     GROUP BY
       u.idUtilisateur
   ) tp_pp ON u.idUtilisateur = tp_pp.idUtilisateur
@@ -176,7 +178,7 @@ FROM
       AND s.Categorie = t.Categorie
     WHERE
       t.Statut = 1
-      AND (CURRENT_DATE - 7) < t.Date_Realisation
+      AND (SYSDATE - 7) < t.Date_Realisation
     GROUP BY
       u.idUtilisateur
   ) ta_pp ON u.idUtilisateur = ta_pp.idUtilisateur
@@ -193,8 +195,8 @@ FROM
       AND s.Categorie = t.Categorie
     WHERE
       t.Statut = 0
-      AND (CURRENT_DATE - 7) < t.Date_Echeance
-      AND t.Date_Echeance < CURRENT_DATE
+      AND (SYSDATE - 7) < t.Date_Echeance
+      AND t.Date_Echeance < SYSDATE
     GROUP BY
       u.idUtilisateur
   ) tp_pn ON u.idUtilisateur = tp_pn.idUtilisateur
@@ -212,8 +214,8 @@ FROM
       AND s.Categorie = t.Categorie
     WHERE
       t.Statut = 0
-      AND (CURRENT_DATE - 7) < t.Date_Echeance
-      AND t.Date_Echeance < CURRENT_DATE
+      AND (SYSDATE - 7) < t.Date_Echeance
+      AND t.Date_Echeance < SYSDATE
     GROUP BY
       u.idUtilisateur
   ) ta_pn ON u.idUtilisateur = ta_pn.idUtilisateur

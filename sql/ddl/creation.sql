@@ -315,6 +315,7 @@ BEGIN
     RETURN Points;
 
 END Points_Semaine;
+/
 
 -- 2
 -- Je copie les lignes affectées dans une variable pour ne pas avoir de problèmes
@@ -351,6 +352,7 @@ BEGIN
 
     COMMIT;
 END Archiver_Taches;
+/
 
 ALTER SESSION SET NLS_DATE_LANGUAGE = 'ENGLISH';
 
@@ -364,6 +366,7 @@ BEGIN
     COMMIT;
     Dbms_Output.Put_Line('Le numéro du travail ' || V_Travail_No);
 END;
+/
 
 -- 3
 -- Je ne vais même pas tenter ça en PL/SQL. Java, ça aurait pu le faire, mais ici ce n'est pas le but.
@@ -416,3 +419,4 @@ BEGIN
     -- Return the cursor variable
     RETURN Suggestions_Cursor;
 END Generer_Suggestions;
+/

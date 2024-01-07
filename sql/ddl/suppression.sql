@@ -24,6 +24,7 @@
 -- DROP TABLE TACHE_ACTUELLE CASCADE CONSTRAINTS;
 -- DROP TABLE TACHE_PASSEE CASCADE CONSTRAINTS;
 -- DROP TABLE UTILISATEUR CASCADE CONSTRAINTS;
+-- /
 --
 -- Reference for the DROP blocks with error handling below
 -- https://stackoverflow.com/questions/1799128/oracle-if-table-exists
@@ -36,6 +37,7 @@ EXCEPTION
             RAISE;
         END IF;
 END;
+/
 
 BEGIN
     FOR Rec IN (SELECT Job FROM User_Jobs WHERE LOWER(What) LIKE '%archiver_taches%')
@@ -43,6 +45,7 @@ BEGIN
             Dbms_Job.Remove(Rec.Job);
         END LOOP;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP PROCEDURE Archiver_Taches';
@@ -52,6 +55,7 @@ EXCEPTION
             RAISE;
         END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP FUNCTION Points_Semaine';
@@ -61,6 +65,7 @@ EXCEPTION
             RAISE;
         END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Liste_Utilisateur_Adresse';
@@ -69,6 +74,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Utilisateur_Adresse';
@@ -77,6 +83,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Taches_Actuelle_Liste';
@@ -85,6 +92,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Taches_Passee_Liste';
@@ -94,6 +102,7 @@ EXCEPTION
     END IF;
 
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Comporte_Score';
@@ -102,6 +111,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Score_Programme';
@@ -110,6 +120,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Utilisateur_Tache_Actuelle';
@@ -118,6 +129,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Utilisateur_Tache_Passee';
@@ -126,6 +138,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Tache_Actuelle_Statut_Dateecheance';
@@ -134,6 +147,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Tache_Passee_Statut_Dateecheance';
@@ -142,6 +156,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Tache_Actuelle_Utilisateur_Statut_Daterealisation';
@@ -150,6 +165,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP INDEX Idx_Tache_Passee_Utilisateur_Statut_Daterealisation';
@@ -158,6 +174,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP VIEW Taches';
@@ -166,6 +183,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Comporte CASCADE CONSTRAINTS';
@@ -174,6 +192,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Depend_De CASCADE CONSTRAINTS';
@@ -182,6 +201,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Est_Assigne CASCADE CONSTRAINTS';
@@ -190,6 +210,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Liste CASCADE CONSTRAINTS';
@@ -198,6 +219,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Periodicite CASCADE CONSTRAINTS';
@@ -206,6 +228,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Score CASCADE CONSTRAINTS';
@@ -214,6 +237,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Tache CASCADE CONSTRAINTS';
@@ -223,6 +247,7 @@ EXCEPTION
     END IF;
 
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Tache_Actuelle CASCADE CONSTRAINTS';
@@ -231,6 +256,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Tache_Passee CASCADE CONSTRAINTS';
@@ -239,6 +265,7 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/
 
 BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE Utilisateur CASCADE CONSTRAINTS';
@@ -247,3 +274,4 @@ EXCEPTION
         RAISE;
     END IF;
 END;
+/

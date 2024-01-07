@@ -6,6 +6,7 @@ BEGIN
     -- Perdu => 1 ou 0
     Dbms_Output.Put_Line(Points_Semaine(2, 0));
 END;
+/
 
 -- Utilisation dans une requête
 SELECT U.Idutilisateur, Points_Semaine(U.Idutilisateur, 0)
@@ -63,6 +64,7 @@ FROM (SELECT COUNT(Ta.Idtache) FROM Tache_Actuelle Ta),
 BEGIN
     Archiver_Taches();
 END;
+/
 
 -- On insère une tâche dépassée non accomplie
 INSERT INTO Tache (Idtache)
@@ -140,3 +142,4 @@ BEGIN
     CLOSE Suggestions_Cursor;
 
 END;
+/

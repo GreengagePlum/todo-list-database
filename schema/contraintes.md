@@ -9,7 +9,7 @@ Les codes de contrainte sont comme suit :
 * **(UQxx)**: Unique (UNIQUE).
 * **(PLxx)**: Déclencheur, contrainte dynamique (TRIGGER, PL/SQL).
 
-où **xx** est l'identifiant globale de la contrainte dans l'ensemble des contraintes indiquées ici, et valable aussi dans les scripts de création de tables concernant l'implémentation. Ainsi on peut chercher un de ces codes dans les fichiers pour retrouver l'implémentation de la contrainte unique.
+où **xx** est l'identifiant globale de la contrainte dans l'ensemble des contraintes indiquées ici, et valable aussi dans les scripts de création de tables concernant l'implémentation. Ainsi on peut chercher un de ces codes dans les fichiers (surtout dans `creation.sql`) pour retrouver l'implémentation de la contrainte unique.
 
 ## COMPORTE
 

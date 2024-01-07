@@ -1,4 +1,4 @@
-# Cookiecutter
+# TODO list
 
 [![fr](https://img.shields.io/badge/lang-fr-yellow.svg)](README.md)
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.en.md)

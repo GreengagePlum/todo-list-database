@@ -5,6 +5,8 @@
 -- mettre en commentaire pour après les executer à la main en les séléctionnant en
 -- entier en tant que bloc et executer la séléction avec DBeaver.
 -- Sauf des parties de PL/SQL DBeaver gère tout le reste très bien :)
+-- P.S. il faut aussi veiller à supprimer les "/" dans les scripts pour l'execution
+-- de ce script ci dans DBeaver
 
 -- La création des tables, vues, procédures, fonctions, contraintes, index et déclancheurs
 @include ddl/suppression.sql

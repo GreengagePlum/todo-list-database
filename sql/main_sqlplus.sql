@@ -1,8 +1,8 @@
-set define off
-set serveroutput on
-set echo on
-set termout on
-set errorlog on truncate
+SET DEFINE OFF
+SET SERVEROUTPUT ON
+SET ECHO ON
+SET TERMOUT ON
+SET AUTOCOMMIT ON
 
 -- La création des tables, vues, procédures, fonctions, contraintes, index et déclancheurs
 @ddl/suppression.sql
